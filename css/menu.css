@@ -1,0 +1,188 @@
+/* NAVIGATION */
+.header {
+    width: 100%;
+    height: 80px;
+    padding-left: 1vw;
+    padding-top:0;
+    display: flex;
+    align-items: flex-end;
+    z-index: 999;
+}
+
+.logosmall {
+    height: 75px;
+    display: inline-block;
+    margin-left: 5px; 
+}
+
+.menubar {
+    height: 7.87vh;
+    width: auto;
+    font-weight: 200;
+    margin-right: 17px;
+    display: inline-block;
+    margin-left: auto;
+}
+
+/* Submenu */
+ul li ul.dropdown{
+    min-width: 150px;
+    padding: 5px 10px;
+    background-color: #E6D4CA;
+    display: none;
+    position: absolute;
+}
+
+ul li:hover ul.dropdown{
+    display: block; 
+}
+
+a.menu-dropdown:hover {
+    transition: 0.2s;
+    color: #00cdff;
+}
+
+a.menu-dropdown-current {
+    color: #4369cc;
+}
+
+/* Shared page menu css */
+li.item, ul, li {
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+}
+
+a.menu, a.menu-current{
+    font-size: 15pt;
+    font-weight: normal;
+    padding: 0.1vw 2vw;
+}
+
+a.menu-current {
+    color: #4369cc;
+}
+
+a.menu-current:hover ,a.menu:hover {
+    transition: 0.2s;
+    color: #00cdff;
+}
+
+a.menu {
+    color: #000000;
+}
+/* Current page menu css */
+#current {
+    border-color: #4369cc;
+}
+
+
+li.item {
+    animation: menuflow-out;
+    animation-duration: 0.1s;  
+    border-top: 12px #cccccc solid;
+}
+
+li.item:hover, li.item:active {
+    background-color: #E6D4CA;
+    border-top: 12px #7B96DB solid;
+    animation-name: menuflow-in;
+    animation-duration: 0.2s;
+    transform: scale(1.1);
+    box-shadow: 3px 3px 5px #888888;
+}
+/* END NAVIGAGTION */
+/*SOCIALBUTTONS*/
+div.socialbuttons {
+    position: relative;
+    display: inline-block;
+    top: 37px;
+    margin: 0 auto;
+    height: 116px;
+    width: 510px;
+}
+
+div.socialbuttons div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.socialbutton-be {
+    display: inline-block;
+    width: 50px;
+    height: 58px;
+    background: url(/images/icons/social_be1.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-be:hover, div.socialbutton-be:active {
+    background: url(/images/icons/social_be2.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-ca {
+    display: inline-block;
+    width: 50px;
+    height: 58px;
+    background: url(/images/icons/social_ca1.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-ca:hover, div.socialbutton-ca:active {
+    background: url(/images/icons/social_ca2.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-fb {
+    display: inline-block;
+    width: 50px;
+    height: 58px;
+    background: url(/images/icons/social_fb1.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-fb:hover, div.socialbutton-fb:active {
+    background: url(/images/icons/social_fb2.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-gh {
+    display: inline-block;
+    width: 50px;
+    height: 58px;
+    background: url(/images/icons/social_gh1.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-gh:hover, div.socialbutton-gh:active {
+    background: url(/images/icons/social_gh2.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-in {
+    display: inline-block;
+    width: 50px;
+    height: 58px;
+    background: url(/images/icons/social_in1.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+div.socialbutton-in:hover, div.socialbutton-in:active {
+    background: url(/images/icons/social_in2.png);
+    background-size: 50px 58px;
+    transition: 0.3s;
+}
+
+/*END SOCIALBUTTONS*/

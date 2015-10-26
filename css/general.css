@@ -1,0 +1,179 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+html
+{
+    color: #000 ;
+    font-family: "Montserrat", "Helvetica" ;
+}
+
+/* MAIN CONTENT */
+.content {
+    top: 0;
+    min-height: 90vh;
+    display: block;
+    background-color: #ededed;
+    width: 100%;
+    padding: 3px;
+    overflow: hidden;
+}
+
+/* ANIMATIONS */
+@keyframes menuflow-in {
+    0%   {transform: scale(1); box-shadow: 2px 2px 5px #888888;}
+    85%  {transform: scale(1.15); box-shadow: 4px 4px 5px #888888;}
+    100% {transform: scale(1.1); box-shadow: 3px 3px 5px #888888;}
+}
+
+@keyframes menuflow-out {
+    from  {transform: scale(1.1); box-shadow: 3px 3px 5px #888888;}
+    to    {transform: scale(1); box-shadow: 0px 0px 0px #888888;}
+}
+
+/*END ANIMATIONS*/
+/*FOOTER*/
+.footer {
+    background-color: #cccccc;
+    height: auto;
+    margin: 0;
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+div.footer {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+ul.footer {
+    text-align: left;
+    line-height: 0;
+}
+
+li.footer {
+    color: #ffffff;
+    font-size: 20pt;
+    padding: 0;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 10px;
+    display: block;
+}
+
+a.footer {
+    color: #ffffff;
+    transition: .5s;
+}
+
+a.footer:hover {
+    color: #4369cc;
+    transition: .5s;
+}
+/* General text styles */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/*end general tekst styles*/
+.text {
+    width: 50%;
+}
+.titlebar {
+    height: auto;
+}
+
+th {
+    text-align: left;
+}
+
+.title {
+    background-color: #4369cc;
+    width: 85%;
+    height: 123px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+.link {
+    background-color: #abe;
+    background-image: image("/images/linkdir.png");
+    background-origin: border-box;
+    background-position: right bottom;
+    background-size: cover;
+    width: 15%;
+    height: 123px;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.innercontent {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    padding: 3% 5%;
+}
+
+.portrait {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.snap {
+    transform: scale(1);
+    transition: 0.5s;
+    display: inline-block;
+    position: absolute;
+    right: 250px;
+    vertical-align: text-top;
+}
+
+.snap:hover, .snap:active {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+div.expitem {
+    margin: 100px 25px;
+    min-height: 300px;
+    padding: 15px;
+}
+
+.skill {
+    margin: 100px 0;
+}
+
+img.skill {
+    width: 100%;
+}
+
+.skilltxt {
+    margin: 50px auto;
+    width: 80%;
+}
+
+iframe.map {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+     width:600px;
+    height:200px;
+}

@@ -1,0 +1,229 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+html
+{
+    color: #000 ;
+    font-family: "Montserrat" ;
+}
+
+/* Landing page */
+.containerlanding {
+    background-image: url("../images/landing.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    cursor: s-resize;
+    box-shadow: 0px 2px 5px grey;
+}
+
+.landinglogoback {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    margin-top: -175px;
+    background-color: rgba( 255, 255, 255, 0.8);
+    text-align: center;
+}
+    
+.landinglogo {
+    height: 30vh;
+    width: auto;
+}
+/* end landing page */
+
+/* MAIN CONTENT */
+.content {
+    position: relative;
+    top: 100vh;
+    /*margin-top: 100vh;*/
+    display: block;
+    background-color: rgba( 240, 240, 240, 1);
+    width: 100vw;
+    padding: 3px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.divider-top {
+    height: 200px;
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+    padding: 0 7%;
+}
+
+.introimg {
+    display: inline-block;
+    margin-left: 200px;
+    margin-bottom: 40px;
+    transform: scaleX(-1);
+    height: 500px;
+    width: auto;
+}
+
+                
+/*END MAIN CONTENT*/
+/*CIRCLELINKS*/
+.circles {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 50px;
+    border-top: 5px #cccccc solid;
+}
+
+.circle-divider {
+    width: 5%;
+    height: 10px;
+    display: inline-block;
+}
+
+.circle-container {
+    width: 30%;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+    animation-name: image-out;
+    animation-duration: 0.5s;
+}
+
+.circle-container:hover {
+    animation-name: image-in;
+    animation-duration: 0.4s;
+    transform: scale(1.1);
+}
+
+a.circletext {
+    color: #666666;
+    font-size: 30pt;
+}
+
+a.circletext:hover {
+    color: #4369cc; 
+}
+    
+.circleimage { 
+    width: 65%;
+    height: auto;
+    padding: 0 17.5%;
+}
+
+/* END CIRCLELINKS*/
+
+/* ANIMATIONS */
+@keyframes menuflow-in {
+    0%   {transform: scale(1); box-shadow: 2px 2px 5px #888888;}
+    85%  {transform: scale(1.15); box-shadow: 4px 4px 5px #888888;}
+    100% {transform: scale(1.1); box-shadow: 3px 3px 5px #888888;}
+}
+
+@keyframes menuflow-out {
+    from    {transform: scale(1.1); box-shadow: 3px 3px 5px #888888;}
+    to      {transform: scale(1); box-shadow: 0px 0px 0px #888888;}
+}
+
+@keyframes image-in {
+    0%   {transform: scale(1);}
+    85%  {transform: scale(1.15);}
+    100% {transform: scale(1.1);}
+}
+
+@keyframes image-out {
+   /* from    {transform: scale(1.1);}
+    to      {transform: scale(1);} */
+    0%    {transform: scale(1.1);}
+    85%   {transform: scale(0.95)}
+    100%  {transform: scale(1)}
+}
+/*END ANIMATIONS*/
+/*FOOTER*/
+.footer {
+    background-color: #cccccc;
+    height: auto;
+    margin: 0;
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+div.footer {
+    width: 100%;
+}
+
+ul.footer {
+    text-align: left;
+    line-height: 0;
+}
+
+li.footer {
+    color: #ffffff;
+    font-size: 20pt;
+    padding: 0;
+    text-align: left;
+    font-weight: bold;
+    margin-right: 10px;
+    display: block;
+}
+
+a.footer {
+    color: #ffffff;
+    transition: .5s;
+}
+
+a.footer:hover {
+    color: #4369cc;
+    transition: .5s;
+}
+
+/* General text styles */
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+p.intro {
+    font-size: 12pt;
+    font-weight: 100;
+    width: 500px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*end general tekst styles*/
+
+.text {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.video {
+    background-color: #666666;
+    height: 315px;
+    width: 100%;
+    display: inline-block;
+}
+
+iframe.video {
+    margin: 0 auto;
+    border-width: 0;
+    display: block;
+    width: 560px;
+}
+
+iframe.map {
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    width:600px;
+    height:200px;
+}
