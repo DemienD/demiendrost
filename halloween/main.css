@@ -1,0 +1,159 @@
+/* Wat doen de '+' en '~' selectoren in CSS?
+Element + Element; "div + p" selecteert alle <p> elementen die direct achter een <div> zijn geplaatst.
+Element ~ Element; "p ~ ul" selecteert alle <ul> elementen waar een <p> element aan voorafgaat.
+*/
+
+html, body {
+    background-color: #333333;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+div.body {
+    background-color: rgba( 100, 200, 100, 0.20);
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 100px 50px 100px;
+    overflow: hidden;
+}
+
+img.footer {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+
+img + p {
+    color: #660000;
+}
+img + p:hover {
+    color: #333333;
+    background-color: #660000;
+    transition: ease-in-out 5s;
+}
+
+h1 {
+    font-family: Fontdiner Swanky;
+    font-size: 50px;
+    color: #ccaa00;
+    transition: ease-in-out 1s;
+}
+
+h1:hover {
+    color: #aa8800;
+    transform: scale(1.4);
+}
+
+center + img.pumpkin:hover, img.pumpkin:active {
+    animation: pumpkins;
+    animation-duration: 0.3s;
+}
+
+img.bat {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: batfly;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+#bat1 {
+    right: 200px;
+    top: 300px;
+    animation-delay: 0s;
+}
+#bat2 {
+    right: 250px;
+    top: 250px;
+    animation-delay: 0.5s;
+}
+#bat3 {
+    right: 175px;
+    top: 200px;
+    animation-delay: 1.2s;
+}
+
+img ~ div {
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+}
+
+img.monster {
+    width: 85px;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    animation: scary infinite;
+    animation-duration: 5s;
+}
+
+#monster1 {
+    left: 25%;
+    animation-delay: 0s;
+}
+#monster2 {
+    left: 40%;
+    animation-delay: 2.5s;
+}
+#monster3 {
+    left: 55%;
+    animation-delay: 1.5s;
+}
+#monster4 {
+    left: 70%;
+    animation-delay: 0.5s;
+}
+    
+img.death {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: 200px;
+    margin: 0 auto;
+    animation: deathmove infinite;
+    animation-duration: 120s;
+}
+
+/* ANIMATIONS */
+@keyframes pumpkins {
+    0%     {transform: rotate(0deg);}
+    25%    {transform: rotate(5deg) translate(-10px, 0);}
+    50%    {transform: rotate(0deg) translate(5px, -5px);}
+    75%    {transform: rotate(-5deg) translate(2px, 2px);}
+}
+
+@keyframes batfly {
+    0% {transform: translate(0, 0);}
+    25% {transform: translate(-2px, -20px) rotate(-3deg);}
+    50% {transform: translate(10px, -30px) rotate(5deg);}
+    75% {transform: translate(5px, -15px) rotate(-12deg);}
+    100% {transform: translate(0, 0);}
+}
+
+@keyframes scary {
+    0% {transform: translate(0, 0);}
+    30% {transform: translate(0, -20px);}
+    40% {transform: translate(0, -20px);}
+    45% {transform: translate(0, -50px) rotate(5deg);}
+    70% {transform: translate(0, -50px) rotate(-2deg);}
+    75% {transform: translate(0, 0);}
+    100% {transform: translate(0, 0);}
+}
+
+@keyframes deathmove {
+    0%     {transform: translate(0, 0) scaleX(-1);}
+    25%    {transform: translate(100vw, 0) scaleX(-1);}
+    26%    {transform: translate(100vw, 0) scaleX(1);}
+    50%    {transform: translate(-20vw, 0);}
+    51%   {transform: translate(-20vw, 0) scaleX(-1);}
+    100%   {transform: translate(0, 0) scaleX(-1);}
+}
